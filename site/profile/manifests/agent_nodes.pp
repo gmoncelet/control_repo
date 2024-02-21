@@ -5,11 +5,11 @@ class profile::agent_nodes {
   host {'web.puppet.vm':
     ensure   => present,
     subnet   => '172.18.0.0/24'
-    ip => '172.18.0.2/24'
+    ip => '172.18.0.2'
   }
   host {'db.puppet.vm':
     ensure   => present,
     subnet   => '172.18.0.0/24'
-    ip => '172.18.0.3/24'
+    ip => '172.18.0.3'
   }
 }
